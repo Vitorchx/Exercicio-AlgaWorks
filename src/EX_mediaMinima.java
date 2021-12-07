@@ -8,7 +8,7 @@ public class EX_mediaMinima {
         System.out.println("Informe a nota de Portugues do aluno: ");
         Double notaPortugues = scan.nextDouble();
 
-        System.out.println("Informe a nota de Matemática do aluno:" );
+        System.out.println("Informe a nota de Matemática do aluno:");
         Double notaMatematica = scan.nextDouble();
 
         Double mediaAluno = notaPortugues + notaMatematica;
@@ -19,15 +19,13 @@ public class EX_mediaMinima {
         Boolean mediaAprovado = mediaAluno >= mediaMinima;
         Boolean alunoAprovado = notaMinima && mediaAprovado;
 
-        if (alunoAprovado){
+        if (alunoAprovado) {
             System.out.println("Aluno aprovado! " + notaPortugues + " pontos em portugues e " + notaMatematica + " pontos em matematica. "
-            + mediaAluno + " pontos no total.");
-        } else{
+                    + mediaAluno + " pontos no total.");
+        } else {
             System.out.println("Aluno reprovado! " + notaMatematica + " pontos em matematica e " + notaPortugues + " pontos em portugues. "
-            + mediaAluno + " pontos no total.");
+                    + mediaAluno + " pontos no total.");
         }
-
-
 
 
     }
